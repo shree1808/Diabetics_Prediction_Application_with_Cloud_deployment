@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction Form</title>
+</head>
+<body>
+
+    <h1>Diabetes Prediction Form</h1>
+    <form method= 'post' action = '/predict'>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+
+    <form method="post" action="/predict">
+        <label>Pregnancies</label><br>
+        <input type="text" name="pregnancies"><br><br>
+
+        <label>Glucose Level</label><br>
+        <input type="text" name="glucose"><br><br>
+
+        <label>Blood Pressure</label><br>
+        <input type="text" name="blood_pressure"><br><br>
+
+        <label>Skin Thickness</label><br>
+        <input type="text" name="skin_thickness"><br><br>
+
+        <label>Insulin Level</label><br>
+        <input type="text" name="insulin"><br><br>
+
+        <label>BMI (Body Mass Index)</label><br>
+        <input type="text" name="bmi"><br><br>
+
+        <label>Diabetes Pedigree Function</label><br>
+        <input type="text" name="diabetes_pedigree_function"><br><br>
+
+        <label>Age</label><br>
+        <input type="text" name="age"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>

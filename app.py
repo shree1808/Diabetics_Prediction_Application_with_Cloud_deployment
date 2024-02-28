@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 from flask import Flask,render_template,request
 
-model = pickle.load(open('C:\\Users\\Shree123\\ML_end2end_EC2_AWS\\tuned_model.pkl','rb')) # read in binary mode
+model = pickle.load(open('tuned_model.pkl','rb')) # read in binary mode
 app = Flask(__name__)
 
 @app.route('/')
